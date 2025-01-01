@@ -5,6 +5,7 @@ spring:
        locator:
         enabled: true
       routes:
+      # use http://localhost:8073/libraryBookMs/Book.html to run
         - id: librarybookms-route
           uri: lb://LIBRARYBOOKMS
           predicates:
