@@ -10,6 +10,7 @@ public class LibraryApiGatewayApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryApiGatewayApplication.class, args);
 		System.out.println("-----------------APIGateway Started-------------");
+		
 	}
 
 }

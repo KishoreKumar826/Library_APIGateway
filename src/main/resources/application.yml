@@ -1,3 +1,4 @@
+
 spring:
    cloud:
     gateway:
@@ -7,9 +8,9 @@ spring:
       routes:
       # use http://localhost:8073/libraryBookMs/Book.html to run
         - id: librarybookms-route
-          uri: lb://LIBRARYBOOKMS
+          uri: lb://LIBRARYBOOKMS # Load balance to LIBRARYBOOKMS service
           predicates:
-            - Path=/libraryBookMs/**
+            - Path=/libraryBookMs/** # Match paths starting with /libraryBookMs/
           filters:
             - RewritePath=/libraryBookMs/(?<segment>.*), /${segment}
 
